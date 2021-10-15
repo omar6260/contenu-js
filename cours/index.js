@@ -59,4 +59,6 @@ respons.addEventListener("mouseover", () => {
 const keypressContainer = document.querySelector(".keypress");
 const key = document.getElementById("key")
 
-console.log(key)
+keypressContainer.addEventListener("keypress", (e) => {
+	key.textContent = "voici du text";
+})
